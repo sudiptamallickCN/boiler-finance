@@ -1,0 +1,23 @@
+// footer partial
+
+.c-main-footer{
+    @include gradient-horizontal($blue-shade2, $green-shade1);
+    color: $white;
+    font-size: $font-size-base - 6;
+    p{
+        margin-bottom: 5px;
+    }
+    li{
+        border-left: 1px solid $white;
+        @include inline-block();
+        line-height: $line-height-base - 8;
+        margin: 0 -2px;
+        padding: 0 10px;
+        &:first-child{
+            border:none;
+        }
+    }
+    a{
+        color: $white;
+    }
+}

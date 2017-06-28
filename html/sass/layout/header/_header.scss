@@ -1,0 +1,14 @@
+// header partial
+
+.c-header-right{
+    &__contact{
+        color: $blue-ash;
+        font-size: $font-size-base - 6;
+        margin-bottom: 5px;
+    }
+    &__openhrs{
+        color: $blue-shade1;
+        font-size: $font-size-base - 5;
+    }
+}
+

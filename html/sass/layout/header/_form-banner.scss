@@ -1,0 +1,97 @@
+// header form banner partial
+
+.c-form-banner{
+    background-image: url('../images/form-bg.jpg');
+    color: $white;
+    position: relative;
+}
+.c-form-banner-inner{
+    position: relative;
+    z-index: 2;
+    &__heading{
+        @include inline-block();
+        margin-bottom: 60px;
+        width: 95%;
+    }
+    &__form{
+        @include inline-block();
+        width: 75%;
+    }
+}
+.c-form--element{
+    .c-radio-field{
+        margin: 25px 0 30px;
+    }
+    p{
+        font-size: $font-size-base * 2 - 2;
+        line-height: $line-height-base * 2;
+    }
+    label{
+        display: block;
+    }
+    fieldset:not(:first-of-type){
+        display: none;
+    }
+    .block{
+        display:block;
+    }
+    .radio-btn{
+        background-color: $white;
+        @include border-radius(50px);
+        display: table;
+        height: 50px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        width: 100%;
+        label{
+            color: $grey;
+            display: table-cell;
+            font-size: $font-size-base - 6;
+            font-weight: 100;
+            text-align: left;
+            vertical-align: middle;
+        }
+    }
+    input[type=radio]{
+        margin: 1px 0 0;
+        margin-left: -20px!important;
+    }
+    .orange{
+        @include gradient-vertical($orng-shade1, $red-shade1);
+        border-radius: 50px;
+        padding: 12px;
+        width: 60%;
+        margin: 0 auto 10px;
+        color: #fff;
+    }
+    .orange:hover, .orange:active, .btn-info.active:hover{
+        background-color: #D58020;
+    }
+    .btn{
+        border: none;
+        color: #fff;
+        font-size: $font-size-base + 2;
+        outline: none;
+        text-transform: uppercase;
+    }
+}
+
+
+.c-step-animation{
+    margin: 20px auto 40px;
+    width: 75%;
+    .progress-bar{
+        background-color:$green-shade1;
+    }
+    .progress{
+        background-color: $blue-shade2;
+        border-radius: 6px;
+        height: 10px;
+    }
+}
+
+
+
+
+
+

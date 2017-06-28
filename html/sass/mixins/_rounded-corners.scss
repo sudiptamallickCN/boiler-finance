@@ -1,0 +1,98 @@
+// ----------------------------------------------------------------------
+
+  // Rounded Corners
+
+// ----------------------------------------------------------------------
+
+ // example: @include roundedCorners(10);
+
+@mixin roundedCorners($size) {
+  border-radius: $size + px;
+}
+
+// Rounded Corners Top Only
+@mixin roundedTop($size) {
+  border-radius: $size + px $size + px 0 0;
+}
+
+// Rounded Corner Top Left Only
+@mixin roundedTopLeft($size) {
+  border-radius: $size + px 0 0 0;
+}
+
+// Rounded Corner Top Right Only
+@mixin roundedTopRight($size) {
+  border-radius: 0 $size + px 0 0;
+}
+
+// Rounded Corners Bottom Only
+@mixin roundedBottom($size) {
+  border-radius: 0 0 $size + px $size + px;
+}
+
+// Rounded Corner Bottom Left Only
+@mixin roundedBottomLeft($size) {
+  border-radius: 0 0 0 $size + px;
+}
+
+// Rounded Corner Bottom Right Only
+@mixin roundedBottomRight($size) {
+  border-radius: 0 0 $size + px 0;
+}
+
+// Rounded Corners Left Only
+@mixin roundedLeft($size) {
+  border-radius: $size + px 0 0 $size + px;
+}
+
+// Rounded Corners Right Only
+@mixin roundedRight($size) {
+  border-radius: 0 $size + px $size + px 0;
+}
+
+// ----------------------------------------------------------------------
+
+// Border Radius
+
+// ----------------------------------------------------------------------
+
+@mixin border-radius($size) {
+  border-radius: $size;
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -ms-border-radius:$size;
+}
+
+@mixin border-top-right-radius($size) {
+  border-top-right-radius: $size;
+  -webkit-border-top-right-radius: $size;
+  -moz-border-top-right-radius: $size;
+  -ms-border-top-right-radius:$size;
+}
+
+@mixin border-top-left-radius($size) {
+  border-top-left-radius: $size;
+  -webkit-border-top-left-radius: $size;
+  -moz-border-top-left-radius: $size;
+  -ms-border-top-left-radius:$size;
+}
+
+@mixin border-bottom-right-radius($size) {
+  border-bottom-right-radius: $size;
+  -webkit-border-bottom-right-radius: $size;
+  -moz-border-bottom-right-radius: $size;
+  -ms-border-bottom-right-radius:$size;
+}
+
+@mixin border-bottom-left-radius($size) {
+  border-bottom-left-radius: $size;
+  -webkit-border-bottom-left-radius: $size;
+  -moz-border-bottom-left-radius: $size;
+  -ms-border-bottom-left-radius:$size;
+}
+
+@mixin border-shadow($value) {
+  box-shadow: $value;
+  -moz-box-shadow: $value;
+  -webkit-box-shadow: $value;
+}
